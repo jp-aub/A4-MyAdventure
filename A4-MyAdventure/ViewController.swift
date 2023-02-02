@@ -11,9 +11,7 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var adventurePrompt: UILabel!
-    
     @IBOutlet weak var choiceOne: UIButton!
-    
     @IBOutlet weak var choiceTwo: UIButton!
     
     var advLogic = AdventureLogic()
@@ -31,15 +29,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func choiceOneSelected(_ sender: UIButton) {
-        advLogic.selectPathOne()
-        
+        if (!advLogic.selectPathOne()) {
+            choiceOne.isHidden = true;
+            choiceTwo.isHidden = true;
+        }
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(getAdventure), userInfo: nil, repeats: false)
     }
     
     
     @IBAction func choiceTwoSelected(_ sender: UIButton) {
-        advLogic.selectPathTwo()
-        
+        if (!advLogic.selectPathTwo()) {
+            choiceOne.isHidden = true;
+            choiceTwo.isHidden = true;
+        }
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(getAdventure), userInfo: nil, repeats: false)
     }
     

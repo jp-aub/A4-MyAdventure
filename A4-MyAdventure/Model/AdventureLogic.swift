@@ -49,7 +49,7 @@ struct AdventureLogic {
                             -1,
                             -1),
             AdventureChoice(6,
-                            "You ration the food for seven days. It takes six days for you to be rescued. You have been saved.",
+                            "You ration the food for seven days. It takes six days for you to be rescued. You have been saved!",
                             "",
                             "",
                             -1,
@@ -68,11 +68,19 @@ struct AdventureLogic {
         return adventure[currentStep].choice_two
     }
     
-    mutating func selectPathOne() {
+    mutating func selectPathOne() -> Bool {
         currentStep = adventure[currentStep].choice_one_path
+        if adventure[currentStep].choice_one_path != -1 {
+            return true;
+        }
+        return false;
     }
     
-    mutating func selectPathTwo() {
+    mutating func selectPathTwo() -> Bool{
         currentStep = adventure[currentStep].choice_two_path
+        if adventure[currentStep].choice_two_path != -1 {
+            return true;
+        }
+        return false;
     }
 }
