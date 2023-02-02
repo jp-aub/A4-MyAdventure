@@ -13,6 +13,8 @@
 		E87D205D298C0F570034EDB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87D205B298C0F570034EDB2 /* Main.storyboard */; };
 		E87D205F298C0F570034EDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87D205E298C0F570034EDB2 /* Assets.xcassets */; };
 		E87D2062298C0F570034EDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87D2060298C0F570034EDB2 /* LaunchScreen.storyboard */; };
+		E87D206B298C15CF0034EDB2 /* AdventureLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D206A298C15CF0034EDB2 /* AdventureLogic.swift */; };
+		E87D206D298C16C30034EDB2 /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D206C298C16C30034EDB2 /* Adventure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E87D205E298C0F570034EDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E87D2061298C0F570034EDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E87D2063298C0F570034EDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87D206A298C15CF0034EDB2 /* AdventureLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureLogic.swift; sourceTree = "<group>"; };
+		E87D206C298C16C30034EDB2 /* Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		E87D2054298C0F570034EDB2 /* A4-MyAdventure */ = {
 			isa = PBXGroup;
 			children = (
+				E87D206E298C1ED30034EDB2 /* View */,
+				E87D2069298C15B80034EDB2 /* Model */,
 				E87D2055298C0F570034EDB2 /* AppDelegate.swift */,
 				E87D2057298C0F570034EDB2 /* SceneDelegate.swift */,
 				E87D2059298C0F570034EDB2 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				E87D2063298C0F570034EDB2 /* Info.plist */,
 			);
 			path = "A4-MyAdventure";
+			sourceTree = "<group>";
+		};
+		E87D2069298C15B80034EDB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E87D206A298C15CF0034EDB2 /* AdventureLogic.swift */,
+				E87D206C298C16C30034EDB2 /* Adventure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E87D206E298C1ED30034EDB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +163,8 @@
 				E87D205A298C0F570034EDB2 /* ViewController.swift in Sources */,
 				E87D2056298C0F570034EDB2 /* AppDelegate.swift in Sources */,
 				E87D2058298C0F570034EDB2 /* SceneDelegate.swift in Sources */,
+				E87D206D298C16C30034EDB2 /* Adventure.swift in Sources */,
+				E87D206B298C15CF0034EDB2 /* AdventureLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
