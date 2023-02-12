@@ -16,12 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2a4-cO-gQn">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5je-TE-4Br">
                                 <rect key="frame" x="25" y="109" width="343" height="693"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEa-Wu-GUm">
-                                        <rect key="frame" x="147.66666666666666" y="0.0" width="48" height="334"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="146" y="0.0" width="51.333333333333343" height="334"/>
+                                        <color key="backgroundColor" white="1" alpha="0.68737065397350994" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -30,14 +34,16 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDz-3w-Pie">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="152"/>
+                                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" cornerRadius="16" strokeWidth="3">
                                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </backgroundConfiguration>
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Button"/>
                                                     </attributedString>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="choiceOneSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVn-Y3-Kdg"/>
@@ -45,11 +51,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-mu-NV4">
                                                 <rect key="frame" x="0.0" y="182" width="75" height="152"/>
+                                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" cornerRadius="16" strokeWidth="3">
                                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="choiceTwoSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gK2-Cb-bsW"/>
@@ -66,6 +74,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5je-TE-4Br" secondAttribute="trailing" constant="25" id="432-Vh-fTN"/>
                             <constraint firstAttribute="bottom" secondItem="5je-TE-4Br" secondAttribute="bottom" constant="50" id="69N-gJ-Jcs"/>
                             <constraint firstItem="5je-TE-4Br" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="9Dq-eG-COR"/>
+                            <constraint firstAttribute="bottom" secondItem="2a4-cO-gQn" secondAttribute="bottom" id="GoQ-Ll-zqF"/>
+                            <constraint firstItem="2a4-cO-gQn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="LBk-LW-nTm"/>
+                            <constraint firstItem="2a4-cO-gQn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xR5-Xp-NHJ"/>
+                            <constraint firstItem="2a4-cO-gQn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yDK-eb-Odw"/>
                             <constraint firstItem="5je-TE-4Br" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="zaB-ru-WXt"/>
                         </constraints>
                     </view>
@@ -81,6 +93,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="640" height="853.33331298828125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

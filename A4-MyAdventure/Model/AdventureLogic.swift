@@ -70,6 +70,7 @@ struct AdventureLogic {
     
     mutating func selectPathOne() -> Bool {
         currentStep = adventure[currentStep].choice_one_path
+        // Check to see if we have reached the end of the adventure path or not. If not, return true.
         if adventure[currentStep].choice_one_path != -1 {
             return true;
         }
@@ -78,6 +79,7 @@ struct AdventureLogic {
     
     mutating func selectPathTwo() -> Bool{
         currentStep = adventure[currentStep].choice_two_path
+        // Check to see if we have reached the end of the adventure path or not. If not, return true.
         if adventure[currentStep].choice_two_path != -1 {
             return true;
         }
