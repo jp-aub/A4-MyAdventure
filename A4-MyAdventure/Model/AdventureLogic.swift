@@ -37,7 +37,7 @@ struct AdventureLogic {
                             -1,
                             -1),
             AdventureChoice(4,
-                            "You make a shelter for the night. Upon waking up in the morning you're greeted by a rescue boat on the shore. You have been saved.",
+                            "You make a shelter for the night. Upon waking up in the morning you're greeted by a rescue boat on the shore. You have been saved!",
                            "",
                            "",
                            -1,
